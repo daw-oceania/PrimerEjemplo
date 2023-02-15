@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Ejer 3 Formularios - Solución Tarea</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script type="text/javascript" src="app.js"></script>
+</head>
+
+<body>
+
+<fieldset>
+<legend>Ejer Formularios - Solución Tarea</legend>
+<form name="formulario" id="formulario" action="http://www.google.es" method="get">
+  <label for="nombre">Nombre:</label>
+  <input type="text" name="nombre" id="nombre" placeholder="escribe en minúsculas" />
+  <label for="apellidos">Apellidos:</label>
+  <input type="text" name="apellidos" id="apellidos" placeholder="escribe en minúsculas" />
+  <label for="edad">Edad:</label>
+  <input name="edad" type="text" id="edad" maxlength="3" />
+  <label for="nif">NIF:</label><br>
+  <input name="nif" type="text" id="nif" placeholder="12345678-A" />
+  <label for="email">E-mail:</label>
+  <input name="email" type="text" id="email" />
+  <label for="provincia">Provincia:</label>
+  <select name="provincia" id="provincia">
+    <option value="0" selected="selected">Seleccione Provincia</option>
+    <option value="CO">A Coruña</option>
+    <option value="LU">Lugo</option>
+    <option value="OU">Ourense</option>
+	  <option value="PO">Pontevedra</option>
+  </select>
+  <label for="fecha">Fecha Nacimiento:</label>
+  <input name="fecha" type="text" id="fecha" placeholder="dd-mm-aaaa o dd/mm/aaaa" />
+  <label for="telefono">Teléfono:</label>
+  <input name="telefono" type="text" id="telefono" maxlength="9" placeholder="123456789" />
+  <label for="hora">Hora de visita:</label>
+  <input name="hora" type="text" id="hora" placeholder="hh:mm" />
+  
+  <label for="timeformat">Formato hora:</label>
+  <input class="fhora" type="radio" name="formato" id="formato1" value="12"/>
+  <label class="fhora" for="formato1">12H</label>
+  <input class="fhora" type="radio" name="formato" id="formato2" value="24"/>
+  <label class="fhora" for="formato2">24H	</label>  
+ 
+  <input type="reset" name="limpiar" id="btnClear" value="Limpiar" />
+  <input type="submit" name="enviar" id="btnEnviar" value="Enviar" />
+</form> 
+
+<div id="errores"></div>
+<div id="intentos"></div>
+</fieldset>
+</body>
+
+</html>
